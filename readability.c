@@ -21,9 +21,6 @@ int main (void)
 
 }
 
-printf ("%.0f letters\n", letters);
-printf ("%.0f words \n", words);
-printf ("%.0f sentences \n", round (sentences));
 
 float let = 0;
 float sent = 0;
