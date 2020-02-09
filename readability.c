@@ -33,7 +33,7 @@ if (index <= 1)
 else if (index >=16)
 {printf ("Grade 16+\n");}
 else
-{printf( "Grade is %.0f\n", index);}
+{printf( "Grade %.0f\n", index);}
 
 
 
