@@ -7,8 +7,8 @@ int main (void)
 {
     string s = get_string ("Input text:  ");
     int n = strlen (s);
-    int letters = 0;
-    int words = 1;
+    float letters = 0;
+    float words = 1;
     float sentences = 0;
     for (int count = 0; count < n ; count ++)
 {
@@ -16,10 +16,14 @@ int main (void)
     {letters ++;}
    if ( s [count] == ' ')
     { words++;}
-   if (s [count] == '.' || s [count] == '!' || s [count] == '?')
+   if (s [count] == '.' || s [count] == '!'  || s [count] == '?' )
     {sentences++;}
 
 }
+
+printf ("%.0f letters\n", letters);
+printf ("%.0f words \n", words);
+printf ("%.0f sentences \n", round (sentences));
 
 float let = 0;
 float sent = 0;
