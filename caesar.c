@@ -21,7 +21,8 @@ int main (int argc, string argv[])
         }
       }
       if (alpha >0)
-       {printf ("Usage: ./caesar key\n");
+       {printf ("Usage: ./caesar key\n") ;
+        return 1;
        }
       else if (alpha == 0)
        { int key = atoi (argv[1]) % 26;
