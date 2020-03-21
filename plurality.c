@@ -96,7 +96,7 @@ void print_winner(void)
         
     }
    
-  
+    printf ("\n");
 
     return;
 }
