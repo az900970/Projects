@@ -92,11 +92,11 @@ void print_winner(void)
             }
     for (int l = 0; l < candidate_count; l++)
     { if (candidates[l].votes == win)
-        {printf ("%s", candidates[l].name);}
+        {printf ("%s \n", candidates[l].name);}
         
     }
    
-    printf ("\n");
+  
 
     return;
 }
