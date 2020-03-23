@@ -159,7 +159,7 @@ bool print_winner(void)
     float voters = voter_count;
     required = voters / 2;
     for ( int n = 0; n < candidate_count; n++)
-    { if (candidates[n].votes >= required)
+    { if (candidates[n].votes > required)
       { printf ("%s \n", candidates[n].name) ;
           return true;
       }
