@@ -155,11 +155,12 @@ void tabulate(void)
 // Print the winner of the election, if there is one
 bool print_winner(void)
 {
-    int required = 0;
-    required = voter_count / 2;
+    float required = 0;
+    float voters = voter_count;
+    required = voters / 2;
     for ( int n = 0; n < candidate_count; n++)
     { if (candidates[n].votes >= required)
-      { printf ("%s", candidates[n].name) ;
+      { printf ("%s \n", candidates[n].name) ;
           return true;
       }
     }
