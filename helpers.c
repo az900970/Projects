@@ -173,7 +173,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
               image[x][y].rgbtGreen = round ( image[x][y - 1].rgbtGreen + image[x][y].rgbtGreen + image[x - 1 ][y].rgbtGreen
               + image[x - 1][y - 1].rgbtGreen ) / 4.0 ;
           }
-           if ( x != 0 && x < height && y != 0 && y < width  )
+           if ( x != 0 && x < height - 1 && y != 0 && y < width - 1 )
           {
               image[x][y].rgbtRed = round ( image[x - 1][y - 1].rgbtRed +  image[x - 1][y].rgbtRed + image[x - 1][y + 1].rgbtRed
               + image[x][y - 1].rgbtRed + image[x][y].rgbtRed + image[x][y + 1].rgbtRed
