@@ -77,7 +77,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
               temp[y] = image[x][y];
 
               if ( z == 1 )
-              { count = width - y;
+              { count = (width - 1) - y;
               image[x][y] = temp[count];
               }
             }
