@@ -104,7 +104,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
               + image[x + 1][y + 1].rgbtGreen ) / 4.0 ;
           }
 
-          if ( x == 0 && y != 0 ) // Top Edge of picture
+          if ( x == 0 && y > 0 && y < width - 1 ) // Top Edge of picture
           {
               image[x][y].rgbtRed = round ( image[x][y - 1].rgbtRed +  image[x][y].rgbtRed + image[x][y + 1].rgbtRed
               + image[x + 1 ][y - 1].rgbtRed + image[x + 1][y].rgbtRed + image[x + 1][y + 1].rgbtRed ) / 6.0 ;
@@ -124,7 +124,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
               + image[x + 1][y - 1].rgbtGreen ) / 4.0 ;
           }
 
-          if ( x != 0 && y == 0 )  // Left edge of picture
+          if ( x > 0 && x < height - 1 && y == 0 )  // Left edge of picture
           {
               image[x][y].rgbtRed = round ( image[x - 1][y].rgbtRed +  image[x][y].rgbtRed + image[x + 1][y].rgbtRed
               + image[x - 1][y + 1].rgbtRed + image[x][y + 1].rgbtRed + image[x + 1][y + 1].rgbtRed ) / 6.0 ;
@@ -134,7 +134,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
               + image[x - 1][y + 1].rgbtGreen + image[x][y + 1].rgbtGreen + image[x + 1][y + 1].rgbtGreen ) / 6.0 ; ;
           }
 
-           if ( x != 0 && y == width - 1 )  // Right edge of picture
+           if ( x > 0 && x < height - 1 && y == width - 1 )  // Right edge of picture
           {
               image[x][y].rgbtRed = round ( image[x - 1][y].rgbtRed +  image[x][y].rgbtRed + image[x + 1][y].rgbtRed
               + image[x - 1][y - 1].rgbtRed + image[x][y - 1].rgbtRed + image[x + 1][y - 1].rgbtRed ) / 6.0 ;
@@ -154,7 +154,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
               + image[x - 1][y + 1].rgbtGreen ) / 4.0 ;
           }
 
-          if ( x == height - 1 && y != 0 ) // Bottom Edge of picture
+          if ( x == height - 1 && y > 0 && y < width - 1 ) // Bottom Edge of picture
           {
               image[x][y].rgbtRed = round ( image[x][y - 1].rgbtRed +  image[x][y].rgbtRed + image[x][y + 1].rgbtRed
               + image[x - 1 ][y - 1].rgbtRed + image[x - 1][y].rgbtRed + image[x - 1][y + 1].rgbtRed ) / 6.0 ;
