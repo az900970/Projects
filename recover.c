@@ -65,12 +65,11 @@ int main(int argc, char *argv[])
                  (buffer[3] & 0xf0) == 0xe0
               )
             {  fclose (outptr) ;
-               count++;
                sprintf (filename,"%03i.jpg", count);
                outptr = fopen (filename, "w");
                fwrite (buffer, sizeof(BYTE), 512, outptr ) ;
+               count++;
          }
-
     }
 fclose (outptr);
 free (buffer) ;
