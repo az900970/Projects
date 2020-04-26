@@ -27,6 +27,6 @@ index = round ( ( 0.0588 * let ) - ( 0.296 * sent ) - 15.8)
 if index <= 1:
     print ("Before Grade 1 ")
 elif index >= 16:
-    print ("Grade 16+ ")
+    print ("Grade 16+")
 else:
     print (f" Grade {index}")
