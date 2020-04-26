@@ -35,7 +35,7 @@ if ( card > 340000000000000 and card < 350000000000000 ) or ( card > 37000000000
 
     checksum = total + total2
     if checksum % 10 == 0:
-        print('AMEX \n')
+        print('AMEX')
 
  # VISA
 
@@ -59,7 +59,7 @@ if ( card > 4000000000000 and card < 5000000000000 ) or ( card > 400000000000000
 
     checksum = total + total2
     if checksum % 10 == 0:
-        print('VISA \n')
+        print('VISA')
 
 # MASTERCARD
 
@@ -83,7 +83,7 @@ if ( card > 5100000000000000 and card < 5600000000000000 ) :
 
     checksum = total + total2
     if checksum % 10 == 0:
-        print('MASTERCARD \n')
+        print('MASTERCARD')
 
 else:
-    print ('INVALID \n')
+    print ('INVALID')
