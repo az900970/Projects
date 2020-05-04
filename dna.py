@@ -35,11 +35,12 @@ with open (sys.argv[2], 'rt') as dnafile:                      # open the second
                     break
             if STRmax[eachSTR] < STRcounter[x]:                 # check if the count is the highest so far
                     STRmax[eachSTR] = STRcounter[x]             # if it is, store it in the list for the max
-
+print (STRmax)
 
 finalcount = [False] * (STRcount - 1)                             # counter for storing number of STR matches ( minus 1 for name)
 
 for d in range (0, len (database), 1):                            # iterate over each row
+    finalcount = [False] * (STRcount - 1)
     for c in range ( 1, STRcount, 1):                             # iterate over each entry in the row
         if STRmax[c] == int (database[d][str (keys[c])]) :        # compare the maximum STR against the value in the database
             finalcount[c - 1] = True                              # store the result; (c-1) since index 0 is for name
