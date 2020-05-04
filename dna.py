@@ -35,7 +35,7 @@ with open (sys.argv[2], 'rt') as dnafile:                      # open the second
                     break
             if STRmax[eachSTR] < STRcounter[x]:                 # check if the count is the highest so far
                     STRmax[eachSTR] = STRcounter[x]             # if it is, store it in the list for the max
-print (STRmax)
+
 
 finalcount = [False] * (STRcount - 1)                             # counter for storing number of STR matches ( minus 1 for name)
 
