@@ -1,8 +1,8 @@
 SELECT
 title
-FROM 
+FROM
 movies
-WHERE 
+WHERE
 year >= 2018
 ORDER BY
-title DESC
+title ASC
