@@ -16,5 +16,5 @@ with open (sys.argv[1]) as csvfile:
         name = row['name'].split ( " ", 2 )
         if len (name) == 2:
             name.append ( name[1])
-            name[1] = "NULL"
+            name[1] = "None"
         db.execute (" INSERT INTO students ( first, middle, last, house, birth ) VALUES (?, ?, ?, ?, ?)", name[0], name[1], name[2], row['house'], row['birth'])

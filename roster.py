@@ -15,7 +15,7 @@ db = SQL ( "sqlite:///students.db")
 result = db.execute ("SELECT first, middle, last, birth FROM students WHERE house = ? ORDER BY last ASC", house)
 
 for x in range (0, len (result), 1):
-    if result[x]['middle'] == 'NULL':
+    if result[x]['middle'] == 'None':
         name = result[x]['first'] + " " + result[x]['last']
     else:
         name = result[x]['first'] + " " + result[x]['middle'] + " " + result[x]['last']
