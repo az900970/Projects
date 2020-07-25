@@ -4,6 +4,7 @@ Welcome to the Global Mentoring Program Project overview.
 
 ABOUT:
 The program was developed on Python 3.7.3 in order to automatically match over 200 FLPs with mentors across the globe based on timezone, preference, and department. 
+
 HOW IT WORKS:
 1. Takes two csv files as input using command line arguments.
 2. Uses Pandas dataframes to store the information.
