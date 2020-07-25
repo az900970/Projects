@@ -1,1 +1,1 @@
-# Hello there! Welcome to my humble repository of projects that I have completed so far :) Most of it is problem sets from Harvard's course on Computer Science, called CS50, but I will be uploading my own projects as well. 
+# Hello there! Welcome to my humble repository of projects that I have completed so far :) It includes a combination of programs developed as part of my online courses, along with a few of my own projects. 
